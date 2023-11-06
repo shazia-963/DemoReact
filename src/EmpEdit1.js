@@ -11,7 +11,7 @@ function EmpEdit1() {
 
   useEffect(()=> {
    //fetch("http://localhost:3000/Employee/"+empid)
-   fetch("http://react-json-api.onrender.com/Employee/"+empid)
+   fetch("https://react-json-api.onrender.com/Employee/"+empid)
       .then((res) => {
         return res.json()
       })
@@ -26,7 +26,7 @@ const sendData = (e) => {
     e.preventDefault()
     const data = {id,name,city,mobile}
       // fetch("http://localhost:3000/Employee/"+empid,{
-      fetch("http://react-json-api.onrender.com/Employee/"+empid,{
+      fetch("https://react-json-api.onrender.com/Employee/"+empid,{
       method:"PUT",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(data)
