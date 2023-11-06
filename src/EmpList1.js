@@ -60,12 +60,12 @@ function EmpList1(){
     const searchData=async (e)=>{
         e.preventDefault()
         //return await axios.get(`http://localhost:3000/Employee?q=${value}`)
-        return await axios.get(`https://-react-json-api.onrender.com/Employee?q=${value}`)
+        return await axios.get(`https://react-json-api.onrender.com/Employee?q=${value}`)
         .then((res)=>{
           console.log(res)
           setData(res.data)
        // setValue("http://localhost:3000/Employee")
-        setValue("https://react-json-api-eryu.onrender.com/Employee")
+        setValue("https://react-json-api.onrender.com/Employee")
         })
     }
     const loadData=(e)=>{
